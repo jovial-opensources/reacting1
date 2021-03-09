@@ -2,7 +2,6 @@ import React, {MouseEventHandler} from 'react';
 //import logo from './logo.svg';
 import './App.css';
 
-
 const header_onclick: MouseEventHandler<HTMLHeadingElement> = (e)=>{
     const x = e.clientX
     const y = e.clientY
@@ -11,7 +10,7 @@ const header_onclick: MouseEventHandler<HTMLHeadingElement> = (e)=>{
 
 export function AppHeader(){
     return (
-        <h2 color={"yellow"} onClick={header_onclick}>
+        <h2 className={"navbar navbar-expand-lg navbar-light bg-light"} color={"yellow"} onClick={header_onclick}>
             Rishav's App
         </h2>
     );
